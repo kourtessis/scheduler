@@ -21,7 +21,7 @@ export default function useVisualMode(initial) {
     if (history.length === 1) {
       return;
     }
-    const currentMode = history.pop();
+   history.pop();
     const lastIndex = history.length - 1;
     const lastMode = history[lastIndex];
     setMode(lastMode);
