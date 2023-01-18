@@ -3,7 +3,7 @@ import React from "react";
 import { render } from "@testing-library/react";
 import Appointment from "components/Appointment/index";
 
-xit("Appointment", () => {
+describe("Appointment", () => {
 /*
   A test that renders a React Component
 */
