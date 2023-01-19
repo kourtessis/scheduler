@@ -10,33 +10,33 @@ export default function useVisualMode(initial) {
 
     if (replace) {
       setHistory((prev) => {
-        const newHistory = [...prev]
+        const newHistory = [...prev];
         newHistory.pop();
         newHistory.push(newMode);
         return newHistory;
       });
     } else {
 
-        setHistory((prev) => {
-          return [...prev, newMode]
-        }
-       );
+      setHistory((prev) => {
+        return [...prev, newMode];
       }
-      return;
+      );
     }
-    function back() {
-
-      const newHistory = [...history];
-      if (history.length === 1) {
-        return;
-      }
-      newHistory.pop();
-      const lastIndex = newHistory.length - 1;
-      const lastMode = newHistory[lastIndex];
-      setMode(lastMode);
-      setHistory(newHistory);
-      return;
-    }
-
-    return { mode, transition, back };
+    return;
   }
+  function back() {
+
+    const newHistory = [...history];
+    if (history.length === 1) {
+      return;
+    }
+    newHistory.pop();
+    const lastIndex = newHistory.length - 1;
+    const lastMode = newHistory[lastIndex];
+    setMode(lastMode);
+    setHistory(newHistory);
+    return;
+  }
+
+  return { mode, transition, back };
+}

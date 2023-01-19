@@ -46,7 +46,7 @@ export default function useApplicationData() {
     return state.days.map(day => day.name === state.day ? { ...day, spots } : day);
   };
 
-  
+
   function bookInterview(id, interview) {
 
     const appointment = {
@@ -58,7 +58,7 @@ export default function useApplicationData() {
       [id]: appointment
     };
 
-    const days = updateSpots( appointments);
+    const days = updateSpots(appointments);
 
     return axios.put(`/api/appointments/${appointment.id}`, { interview })
       .then(res => {
