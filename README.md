@@ -39,3 +39,13 @@ npm test
 ```sh
 npm run storybook
 ```
+
+## Final Product Screenshots
+
+!["This is a screenshot of the adding/editing appointment"](https://github.com/kourtessis/scheduler/blob/master/docs/Adding-Editing-Appointment.png?raw=true)
+
+!["This is a screenshot of the confirming a delete"](https://github.com/kourtessis/scheduler/blob/master/docs/Confirm-Delete.png?raw=true)
+
+!["This is a screenshot of the main appointment page"](https://github.com/kourtessis/scheduler/blob/master/docs/Main-Appointment-Page.png?raw=true)
+
+!["This is a screenshot of a new appointment added and spots remaining updated"](https://github.com/kourtessis/scheduler/blob/master/docs/New-Appointment.png?raw=true)
