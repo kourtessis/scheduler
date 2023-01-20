@@ -40,6 +40,17 @@ npm test
 npm run storybook
 ```
 
+##
+Dependencies
+    "axios": "^0.20.0",
+    "classnames": "^2.2.6",
+    "normalize.css": "^8.0.1",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-scripts": "3.4.4"
+Scheduler-API original github link:
+https://github.com/lighthouse-labs/scheduler-api
+
 ## Final Product Screenshots
 
 !["This is a screenshot of the adding/editing appointment"](https://github.com/kourtessis/scheduler/blob/master/docs/Adding-Editing-Appointment.png?raw=true)
