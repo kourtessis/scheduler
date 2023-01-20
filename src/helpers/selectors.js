@@ -17,7 +17,6 @@ export function getInterviewersForDay(state, day) {
   if (!filteredDays.length) {
     return [];
   }
-
   return filteredDays[0].interviewers.map(id => state.interviewers[id]);
 }
 
